@@ -1,0 +1,13 @@
+Gruntfile.js
+NOTES.md
+config.rb
+package.json
+scss/vendor/
+scss/test.scss
+test/
+test.css
+css/site.css
+node_modules
+.sass-cache
+*.sublime-workspace
+*.sublime-project

@@ -1,0 +1,23 @@
+
+
+// Starter kit
+$inuit-base-font-size:   12px;
+
+// Ajout le namespace partout
+//$inuit-namespace: hello-;
+
+@import "vendor/inuit-defaults/settings.defaults";
+
+@import "vendor/inuit-functions/tools.functions";
+
+@import "vendor/inuit-mixins/tools.mixins";
+
+@import "vendor/inuit-clearfix/trumps.clearfix";
+
+@import "vendor/inuit-box-sizing/generic.box-sizing";
+
+@import "vendor/inuit-page/base.page";
+
+body {
+    font-size: $inuit-base-font-size;
+}

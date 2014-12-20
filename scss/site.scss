@@ -1,0 +1,295 @@
+
+// Inuit import and settings
+@import "vendor/inuit-defaults/settings.defaults";
+
+@import "vendor/inuit-functions/tools.functions";
+@import "vendor/inuit-mixins/tools.mixins";
+
+@import "vendor/inuit-normalize/generic.normalize";
+@import "vendor/inuit-box-sizing/generic.box-sizing";
+
+@import "vendor/inuit-page/base.page";
+@import "vendor/inuit-clearfix/trumps.clearfix";
+
+
+// Setting colors 
+$dark-gray: #292929;
+$dark-orange: #781803;
+$orange: #db6313;
+
+
+// Breakpoint
+$large: "only screen and (min-width: 40em)";
+
+@mixin large() {
+    
+    @media only screen and (min-width: 50em) { @content; }
+}
+
+// si table
+/*table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th {
+  font-weight: bold;
+  border-bottom: 3px solid #ddd;
+  padding-bottom: 0.5em;
+}
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}*/
+
+
+// Layout
+// ------
+
+body {
+    max-width: 1075px;
+    margin: 0 auto;
+    padding: 20px 10%;
+}
+
+
+
+// Fonts
+// -----
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+}
+
+a {
+    color: $orange;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+%title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;    
+}
+
+%title-bold {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;    
+}
+
+h2 {
+    @extend %title;
+}
+
+.title {
+    margin: 0.4em 0;
+    @extend %title-bold;
+    @include inuit-font-size(40px);
+
+    @include large {
+        @include inuit-font-size(60px);
+
+    }
+    &--primary {
+        color: $orange;
+    }
+
+    &--secondary {
+    }
+}
+
+
+/* Highlight style (récupéré du thème de base) */
+/* ------------------------------------------- */
+
+pre,
+.highlight {
+  background: $dark-gray;
+  margin: 0 -20px;
+  padding: 15px 20px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  overflow: auto;
+  color: #ccc;
+  line-height: 22.400000000000002px;
+}
+.highlight .gutter pre,
+.gist .gist-file .gist-data .line-numbers {
+  color: #666;
+  font-size: 0.85em;
+}
+pre,
+code {
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+code {
+  background: #eee;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+}
+pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+.highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.highlight table {
+  margin: 0;
+  width: auto;
+}
+.highlight td {
+  border: none;
+  padding: 0;
+}
+.highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+.highlight figcaption:before,
+.highlight figcaption:after {
+  content: "";
+  display: table;
+}
+.highlight figcaption:after {
+  clear: both;
+}
+.highlight figcaption a {
+  float: right;
+}
+.highlight .gutter pre {
+  text-align: right;
+  padding-right: 10px;
+}
+.highlight .line {
+  height: 22.400000000000002px;
+}
+.gist {
+  margin: 0 -20px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  background: $dark-gray;
+  padding: 15px 20px 15px 0;
+}
+.gist .gist-file {
+  border: none;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  margin: 0;
+}
+.gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+.gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+.gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+.gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.gist .gist-file .gist-meta {
+  background: $dark-gray;
+  color: #999;
+  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 20px;
+}
+.gist .gist-file .gist-meta a {
+  color: #258fb8;
+  font-weight: normal;
+}
+.gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #f2777a;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #f99157;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #9c9;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #9c9;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #69c;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #c9c;
+}
+
+// Override font hightlight
+// ------------------------
+.highlight pre,
+.highlight .gutter pre,
+.gist .gist-file .gist-data .line-numbers,
+.highlight figcaption,
+.gist .gist-file .gist-meta,
+pre {
+    font-size: 0.9em;
+}
+
+.highlight,
+.highlight .line,
+pre {
+    line-height: 20px;
+}

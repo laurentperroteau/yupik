@@ -1,0 +1,49 @@
+
+
+// Tools
+// ====
+@import "vendor/yupik-function/tool.function";
+
+// Trumps
+// ======
+
+// Mixins
+// ======
+$yupik-vendor: true;
+@import "vendor/yupik-vendor/mixins.vendor";
+
+@import "vendor/yupik-mixin-position/mixin.position";
+
+@import "vendor/yupik-mixin-shape/mixin.shape";
+
+$yupik-fallback-rem: true;
+@import "vendor/yupik-mixin-font/mixin.font";
+
+//@import "compass/css3/images";
+//@import "vendor/yupik-mixin-gradient/mixin.gradient";
+
+// Objects
+// =======
+@import "vendor/yupik-vertical-center/objects.vertical-center";
+
+@import "vendor/yupik-transition/mixins.transition";
+
+
+// UI Object
+// =========
+
+// Cette variables est redéclaré dans l'import, mais avec l'option !default: ce qui veut dire qu'elle n'est utilisé que si elle n'est pas déclaré avant (ou après, mais ce n'est ici pas le cas).
+$yupik-dropdown-background: #ddd;
+@import "vendor/yupik-dropdown/ui.dropdown";
+@import "vendor/yupik-breadcrumb/ui.breadcrumb";
+@import "vendor/yupik-order-list/ui.order-list";
+
+
+$yupik-checkbox-border: false;
+$yupik-checkbox-box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.8) inset;
+$yupik-checkbox-radius: 3px;
+@import "vendor/yupik-checkbox/ui.checkbox";
+
+.yupik-chekbox {
+    width: 100px;
+}

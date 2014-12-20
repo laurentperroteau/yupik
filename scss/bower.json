@@ -1,0 +1,31 @@
+{
+  "name": "yupik",
+  "version": "0.0.1",
+  "authors": [
+    "laurentperroteau <laurentperroteau@gmail.com>"
+  ],
+  "description": "A collection of modules inspired by Inuit.css",
+  "main": "README.md",
+  "license": "MIT",
+  "homepage": "laurentperroteau/yupik",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "vendor"
+  ],
+  "dependencies": {
+    "inuit-clearfix": "~0.2.0",
+    "inuit-starter-kit": "~0.2.8",
+    "yupik-breadcrumb": "~0.0.1",
+    "yupik-checkbox": "~0.0.1",
+    "yupik-dropdown": "~0.0.1",
+    "yupik-mixin-font": "~0.0.1",
+    "yupik-mixin-gradient": "~0.0.1",
+    "yupik-mixin-position": "~0.0.2",
+    "yupik-mixin-shape": "~0.0.1"
+  }
+}
