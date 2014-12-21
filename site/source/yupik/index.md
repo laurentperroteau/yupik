@@ -2,7 +2,9 @@ title: yupik
 date: 2014-12-20 11:18:17
 ---
 
-This is a french version, [english version here](https://github.com/laurentperroteau).
+<a class="repo" href="https://github.com/yupik" target="_blank">Github</a>
+
+This is a french version, [english version on Github](https://github.com/laurentperroteau).
 
 Qu'est-ce que Yupik :
 ---------------------
@@ -88,7 +90,7 @@ Notes importantes concernant les mixins :
     @include absolute(10 50%);
 }
 
-/* Generated style */
+/* Style generated */
 .element {
     position: absolute;
     left: 10px;

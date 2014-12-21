@@ -11,6 +11,9 @@
 @import "vendor/inuit-page/base.page";
 @import "vendor/inuit-clearfix/trumps.clearfix";
 
+@import "vendor/yupik-function/tools.function";
+@import "vendor/yupik-mixin-position/mixins.position";
+
 
 // Setting colors 
 $dark-gray: #292929;
@@ -26,22 +29,6 @@ $large: "only screen and (min-width: 40em)";
     @media only screen and (min-width: 50em) { @content; }
 }
 
-// si table
-/*table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-th {
-  font-weight: bold;
-  border-bottom: 3px solid #ddd;
-  padding-bottom: 0.5em;
-}
-td {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-}*/
-
 
 // Layout
 // ------
@@ -52,6 +39,9 @@ body {
     padding: 20px 10%;
 }
 
+.wrapper {
+    position: relative;
+}
 
 
 // Fonts
@@ -102,6 +92,9 @@ h2 {
     }
 }
 
+.repo {
+    @include absolute(auto 0 0);
+}
 
 /* Highlight style (récupéré du thème de base) */
 /* ------------------------------------------- */

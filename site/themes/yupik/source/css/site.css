@@ -429,24 +429,13 @@ html {
   display: table;
   clear: both; }
 
-/*table {
-  width: 100%;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-th {
-  font-weight: bold;
-  border-bottom: 3px solid #ddd;
-  padding-bottom: 0.5em;
-}
-td {
-  border-bottom: 1px solid #ddd;
-  padding: 10px 0;
-}*/
 body {
   max-width: 1075px;
   margin: 0 auto;
   padding: 20px 10%; }
+
+.wrapper {
+  position: relative; }
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
@@ -478,6 +467,11 @@ h2 {
       line-height: 1.2; } }
   .title--primary {
     color: #db6313; }
+
+.repo {
+  position: absolute;
+  top: 0;
+  right: 0; }
 
 /* Highlight style (récupéré du thème de base) */
 /* ------------------------------------------- */
