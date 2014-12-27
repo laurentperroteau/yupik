@@ -12,8 +12,8 @@ language:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
-root: /yupik/web/site/
+url: http://laurentperroteau.com
+root: /yupik_public/
 permalink: :year/:month/:day/:title/
 tag_dir: tags
 archive_dir: archives
@@ -23,7 +23,7 @@ permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: yupik_public
 
 # Writing
 new_post_name: :title.md # File name of new posts
@@ -74,7 +74,7 @@ per_page: 10
 pagination_dir: page
 
 # Disqus
-disqus_shortname: laurentperroteau
+disqus_shortname:
 
 # Extensions
 ## Plugins: https://github.com/hexojs/hexo/wiki/Plugins

@@ -2,9 +2,9 @@ title: yupik
 date: 2014-12-20 11:18:17
 ---
 
-<a class="repo" href="https://github.com/yupik" target="_blank">Github</a>
+<a class="repo" href="https://github.com/laurentperroteau/yupik" target="_blank">Github</a>
 
-This is a french version, [english version on Github](https://github.com/laurentperroteau).
+This is a french version, [english version on Github](https://github.com/laurentperroteau/yupik).
 
 Qu'est-ce que Yupik :
 ---------------------
@@ -13,37 +13,39 @@ Yupik est une [collection de modules](https://github.com/yupik) inspirés par (e
 
 Donc qu'est-ce que Inuit.css :
 
-C'est un framework ultra-léger purement CSS (pas de JavaScript) basé sur SASS (syntaxe SCSS), orienté objet, évolutif et modulable, destinés aux développeurs Front-End. Il utilise la convention de nommage BEM, sépare les modèles indépendamment, est compatible IE8+ et est plein de bonne pratique.
+C'est un framework ultra-léger purement CSS (pas de JavaScript) basé sur SASS (syntaxe SCSS), orienté objet, évolutif et modulable, destinés aux développeurs Front-End. Il utilise la convention de nommage BEM, sépare les modèles indépendamment, est compatible IE8+ et plein de bonne pratique.
 
+Cette dernière version de Inuit liste simplement [des modules](https://github.com/inuitcss) qu’il faudra importer dans votre CSS. Pour tester, commencer par le [Starter Kit](https://github.com/inuitcss/starter-kit) (la [version 5](https://github.com/csswizardry/inuit.css) n'est plus maintenue mais fonctionne très bien).
 
-Cette dernière version de Inuit ( la [version 5](https://github.com/csswizardry/inuit.css) n'est plus maintenue mais fonctionne très bien) liste simplement [des modules](https://github.com/inuitcss) qu’il faudra importer dans votre CSS. Pour tester, commencer par le [Starter Kit](https://github.com/inuitcss/starter-kit).
 
 
 Liste des modules : 
 -------------------
 
-* TOOLS :
-* [Function](https://github.com/laurentperroteau/yupik-function) : la fonction "Responsive" et autres fonctions utilisées dans les mixins
-* MIXINS :
-* Vendor : mixin qui génère les "vendor prefixes"
+* TOOLS:
+* [Function](https://github.com/laurentperroteau/yupik-function):  la fonction "Responsive" et autres fonctions utilisées dans les mixins
+* MIXINS:
+* [Vendor](https://github.com/laurentperroteau/yupik-mixin-vendor) : mixin qui génère les "vendor prefixes" (voir note concernant les “vendor prefixes”)
 * [Position](https://github.com/laurentperroteau/yupik-mixin-position) : mixins qui simplifie l'utilisation de la propriété "position"
 * [Font](https://github.com/laurentperroteau/yupik-mixin-font) : mixins qui simplifie la déclaration de police
 * [Shape](https://github.com/laurentperroteau/yupik-mixin-shape) : mixins pour créer des formes
 * [Gradient](https://github.com/laurentperroteau/yupik-mixin-gradient) : mixin qui génère un dégradé linéaire compatible IE7+ avec Compass
-* Placeholder : styler le placeholder des inputs
-* [Transition](https://github.com/laurentperroteau/yupik-mixin-transition) : CSS3 placeholders de transition
-* OBJECTS :
-* Vertical center : centrer verticalement presque n'importe quoi
-* UI ELEMENTS :
-* [Checkbox](https://github.com/laurentperroteau/yupik-checkbox) : styler des cases à cocher sans JavaScript et sans perdre l'expérience utilisateur [__DEMO__](http://codepen.io/laurentperroteau/pen/vEKQbo?editors=110)
-* [Dropdown](https://github.com/laurentperroteau/yupik-dropdown) : Styler l'élément &lt;select&gt; facilement sans perdre l'expérience utilisateur [__DEMO__](http://codepen.io/laurentperroteau/pen/ZYOmPv?editors=110)
+* [Placeholder](https://github.com/laurentperroteau/yupik-mixin-placeholder) : styler le placeholder des inputs
+* [Transition](https://github.com/laurentperroteau/yupik-mixin-transition) : CSS3 placeholders de transition (équivalent des slide up/down et fade in/out de jQuery en CSS3)
+* OBJECTS:
+* [Vertical center](https://github.com/laurentperroteau/yupik-vertical-center) : centrer verticalement presque n'importe quoi
+* UI ELEMENTS:
+* [Checkbox](https://github.com/laurentperroteau/yupik-checkbox) : styler des checkbox sans JavaScript et sans perdre l'expérience utilisateur [__DEMO__](http://codepen.io/laurentperroteau/pen/vEKQbo?editors=110)
+* [Radio](https://github.com/laurentperroteau/yupik-radio) : stylé des boutons radios without JavaScript and without lose user experience [__DEMO__](http://codepen.io/laurentperroteau/pen/bNwKbL?editors=110)
+* [Dropdown](https://github.com/laurentperroteau/yupik-dropdown) : styler l'élément &lt;select&gt; facilement sans perdre l'expérience utilisateur [__DEMO__](http://codepen.io/laurentperroteau/pen/ZYOmPv?editors=110)
 * [Breadcrumb](https://github.com/laurentperroteau/yupik-breadcrumb) : styler un file d'arianne en forme de fleche [__DEMO__](http://codepen.io/laurentperroteau/pen/bNeQxp?editors=110)
+* [Order liste](https://github.com/laurentperroteau/yupik-order-list) : styler une liste ordonée avec un numéro (ou autre) dans un cercle
 
 
 Comment utiliser les modules :
-------------------------
+------------------------------
 
-Il suffit d'importer dans votre fichier SCSS, le module en le précédent (si besoin) des variables de configuration (exemple avec l'[objects.media](https://github.com/inuitcss/objects.media) d'Inuit) :
+Il suffit d'importer le module dans votre fichier SCSS en le précédent (si besoin) des variables de configuration (exemple avec l'[objects.media](https://github.com/inuitcss/objects.media) d'Inuit) :
 
 ````scss
 $inuit-enable-media--flush: true;
@@ -59,14 +61,14 @@ $yupik-checkbox-radius: 3px;
 
 Les modules ne doivent pas être modifié et ne devraient pas être versionné... les configurations sont suffisantes et vous n'aurez pas à surcharger de style.
 
-On peut également préfixer les classes d'un "namespace" : soit celui global à tout Inuit ou un particulier à chaque module.
+On peut également préfixer les classes d'un "namespace" : soit celui global à tout Inuit ou un particulier pour chaque module.
 
  
-Prérequis :
---------------
+Pré requis :
+------------
 
- 1 - SASS (la version 3.3 n'est pas obligatoire), optionnellement Node.js et Bower
- 2 - Yupik s'inspire de Inuit.css mais n'en dépend pas (à l'exception des modules clearfix et box-sizing)
+* SASS (la version 3.3 n'est pas obligatoire), optionnellement Node.js et Bower
+* Yupik s'inspire de Inuit.css mais n'en dépend pas (à l'exception des modules clearfix et box-sizing)
 
 
 
@@ -78,6 +80,16 @@ Yupik (comme Inuit.css) utilise [Bower](http://bower.io). Si vous ne connaissez 
     $ bower init
     $ bower install --save yupik-[module]
 
+
+Note concernant les "vendor prefixes" :
+---------------------------------------
+
+Yupik recommande l'utilisation de [Autoprefixer](https://github.com/postcss/autoprefixer), c'est pour cette raison que la génération des préfixes est désactivé par défaut. Si vous ne l'utilisez pas, la mixin "vendor" a été prévu, il suffit de l'activer :
+
+````scss
+$yupik-vendor: true;
+@import "bower_components/yupik-mixin-vendor/mixins.vendor";
+````
 
 Notes importantes concernant les mixins :
 -----------------------------------------
