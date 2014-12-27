@@ -83,8 +83,6 @@ Yupik (as Inuit.css) uses [Bower](http://bower.io). If you don't already know, r
 Note about "vendor prefixes":
 ----------------------------
 
-The generation of prefixes is disabled by default. If you need it there but do not use [Autoprefixer](https://github.com/postcss/autoprefixer), set this variable to enable :
-
 Yupik recommends using [Autoprefixer](https://github.com/postcss/autoprefixer), that is why the generation of prefixes is disabled by default. If you do not use Autoprefixer, the mixin "vendor" was planned, simply activate:
 
 ````scss
