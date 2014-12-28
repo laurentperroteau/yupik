@@ -5,7 +5,7 @@ Yupik
 A collection of modules inspired by Inuit.css
 =============================================
 
-<!--This is a french version, [english version here](https://github.com/laurentperroteau).-->
+Read the [French version](http://laurentperroteau.com/yupik/fr/).
 
 What Yupik:
 -----------
@@ -81,7 +81,7 @@ Yupik (as Inuit.css) uses [Bower](http://bower.io). If you don't already know, r
 
 
 Note about "vendor prefixes":
-----------------------------
+-----------------------------
 
 Yupik recommends using [Autoprefixer](https://github.com/postcss/autoprefixer), that is why the generation of prefixes is disabled by default. If you do not use Autoprefixer, the mixin "vendor" was planned, simply activate:
 

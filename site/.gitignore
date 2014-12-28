@@ -3,16 +3,7 @@ Thumbs.db
 db.json
 debug.log
 node_modules/
-public/
-public/2014
-public/archives
-public/fancybox
-public/js
-yupik_public/
-yupik_public/2014
-yupik_public/archives
-yupik_public/fancybox
-yupik_public/js
+yupik/
 source/_posts
 themes/landscape
 themes/scripts
