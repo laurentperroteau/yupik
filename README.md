@@ -5,7 +5,7 @@ Yupik
 A collection of modules inspired by Inuit.css
 =============================================
 
-Read the [French version](http://laurentperroteau.com/yupik/fr/).
+Read the [French version](http://laurentperroteau.com/yupik/fr/)
 
 What Yupik:
 -----------
@@ -39,7 +39,7 @@ List of modules:
 * [Radio](https://github.com/laurentperroteau/yupik-radio): styling input radio without JavaScript and without lose user experience [__DEMO__](http://codepen.io/laurentperroteau/pen/bNwKbL?editors=110)
 * [Dropdown](https://github.com/laurentperroteau/yupik-dropdown): styling &lt;select&gt; element easily without lose user experience [__DEMO__](http://codepen.io/laurentperroteau/pen/ZYOmPv?editors=110)
 * [Breadcrumb](https://github.com/laurentperroteau/yupik-breadcrumb): styling arrow-shaped breadcrumb [__DEMO__](http://codepen.io/laurentperroteau/pen/bNeQxp?editors=110)
-* [Order liste](https://github.com/laurentperroteau/yupik-order-list) : styling ordered list with custom number in a circle
+* [Order-list](https://github.com/laurentperroteau/yupik-order-list) : styling ordered list with custom number in a circle
 
 
 How to use the modules:
@@ -78,6 +78,8 @@ Yupik (as Inuit.css) uses [Bower](http://bower.io). If you don't already know, r
 
     $ bower init
     $ bower install --save yupik-[module]
+
+If you do not want to depend on external repository, it is best to install them anyway with Bower to ensure they have the correct versions and then copy them to your project.
 
 
 Note about "vendor prefixes":

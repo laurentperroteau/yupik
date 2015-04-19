@@ -39,7 +39,7 @@ Liste des modules :
 * [Radio](https://github.com/laurentperroteau/yupik-radio) : stylé des boutons radios without JavaScript and without lose user experience [__DEMO__](http://codepen.io/laurentperroteau/pen/bNwKbL?editors=110)
 * [Dropdown](https://github.com/laurentperroteau/yupik-dropdown) : styler l'élément &lt;select&gt; facilement sans perdre l'expérience utilisateur [__DEMO__](http://codepen.io/laurentperroteau/pen/ZYOmPv?editors=110)
 * [Breadcrumb](https://github.com/laurentperroteau/yupik-breadcrumb) : styler un file d'arianne en forme de fleche [__DEMO__](http://codepen.io/laurentperroteau/pen/bNeQxp?editors=110)
-* [Order liste](https://github.com/laurentperroteau/yupik-order-list) : styler une liste ordonée avec un numéro (ou autre) dans un cercle
+* [Order-list](https://github.com/laurentperroteau/yupik-order-list) : styler une liste ordonée avec un numéro (ou autre) dans un cercle
 
 
 Comment utiliser les modules :
@@ -52,7 +52,7 @@ $inuit-enable-media--flush: true;
 @import "bower_components/inuit-media/objects.media";
 ````
 
-Yupik fonctionne de la meme manière :
+Yupik fonctionne de la même manière :
 
 ````scss
 $yupik-checkbox-radius: 3px;
@@ -68,17 +68,19 @@ Pré requis :
 ------------
 
 * SASS (la version 3.3 n'est pas obligatoire), optionnellement Node.js et Bower
-* Yupik s'inspire de Inuit.css mais n'en dépend pas (à l'exception des modules clearfix et box-sizing)
+* Yupik s'inspire de Inuit.css mais n'en dépend pas (à l'exception des modules très général clearfix et box-sizing)
 
 
 
 Gestion des dépendances : 
 -------------------------
 
-Yupik (comme Inuit.css) utilise [Bower](http://bower.io). Si vous ne connaissez pas encore, lisez le [Getting Started, new to Bower ?](https://github.com/inuitcss/getting-started#new-to-bower)
+Yupik (comme Inuit.css) utilise [Bower](http://bower.io). Si vous ne connaissez pas encore, lisez le [Getting Started, new to Bower ?](https://github.com/inuitcss/getting-started#new-to-bower).
 
     $ bower init
     $ bower install --save yupik-[module]
+
+Si vous ne souhaitez pas dépendre de dépôt externe, il est préférable de les installer tout de même avec Bower pour s'assurer d'avoir les bonnes versions et d'ensuite les copier dans votre projet.
 
 
 Note concernant les "vendor prefixes" :
